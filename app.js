@@ -22,18 +22,16 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
-app.use(require('./routes/tasks'));
-app.use(require('./routes/chat'));
-app.use(require('./routes/create'));
-
 app.use(require('./routes/login'));
 app.use(require('./routes/register'));
 app.use(require('./routes/dashboard'));
 app.use(require('./routes/logout'));
-// app.use(require('./routes/project'));
-// app.use(require('./routes/task'));
-// app.use(require('./routes/subtask'));
+
+app.use(require('./routes/tasks'));
+app.use(require('./routes/chat'));
+app.use(require('./routes/create'));
 app.use(require('./routes/budget'));
+// app.use(require('./routes/project'));
 
 
 
