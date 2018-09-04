@@ -13,18 +13,19 @@ router.use(bodyParser.urlencoded({ extended: false }));
     //Pulls an array of Project objects 
     db.project.findAll({
         where: {
-            user_id: req.user.id
+            user_id: req.user.id,
         }
     })
     .then(function(result){
-        var projectName = project.projectName;
-        var owner = project.teamLead;
-        var startDate = project.startDate;
-        var endDate = project.endDate;
+        var projectName = projectName;
+        // var owner = teamLead;
+        var startDate = startDate;
+        var endDate = endDate;
 
         res.render('/dashboard', {
+            pageTitle: 'Dashboard',
             projectName: projectName,
-            owner: owner,
+            // owner: owner,
             startDate: startDate,
             endDate: endDate
         })
