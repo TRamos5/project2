@@ -1,11 +1,11 @@
-.container{
-    background-color: rgb(58, 63, 78); /* For browsers that do not support gradients */
-    background-image:  linear-gradient(to top left, rgb(90, 122, 168), rgb(67, 91, 126), rgb(45, 56, 87));
+.containerT{
     background-size: cover;
-    width: 400px;
-    border: 1px solid black;
-    border-radius: 10%;
-}s
+    width: 100%;
+    background: linear-gradient(217deg, grey, lightgrey 70.71%),
+    linear-gradient(127deg, grey, lightgrey 70.71%),
+    linear-gradient(336deg, lightgrey, black 70.71%);
+    /* background-size: cover; */
+}
 .headerBox{
     width: 100%;
     display: flex;
@@ -174,4 +174,9 @@ form{
     background-color:red;
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
+}
+.budgetPage {
+    color: white;
+    font-size: 4vw;
+    float: left;
 }

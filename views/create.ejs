@@ -5,27 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel='stylesheet' href='/css/style.css' />
+    <!-- <link rel='stylesheet' href='/css/style.css' /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/create.css">
 
 </head>
 <body>    
-    <button class='back'>Back</button>
+        <% include partials/template/navBarCr.ejs %>
+
     
-    <form action="/create" method="POST">
-        Project Name: <input type="text" name="Nname" />
-        Project Owner's Name: <input type="text" name="Nowner" />
-        Start Date: <input type="date" name="NSdate" />
-        End Date: <input type="date" name="NEdate" />
-        Budget: <input type="integer" name="Nbudget" />
-        Description: <input type="text" name="Ndescription" />
-        <!-- Invite: <input type="text" name="Ninvite" /> -->
-        <button class="addContact">+ Add</button>
-        <input type="submit" class="submit" />
+    <form class="card-body" action="/create" method="POST">
+        <div class='title'>
+            New Task
+        </div>
+        <div class='section'>
+            <div>
+                Project Name: <input type="text" name="Nname" />
+            </div>
+            <div>
+                Project Owner's Name: <input type="text" name="Nowner" /> 
+            </div>
+        </div>  
+        <div class='section'>
+            <div>
+                Start Date: <input type="date" name="NSdate" />
+            </div>
+            <div>
+                End Date: <input type="date" name="NEdate" />
+            </div>
+
+        </div>  
+            <div class = 'desc'>
+                Description: <input type="text" name="Ndescription" />
+            </div>
+        <div class='section' style='border-bottom: none; padding-bottom: none;'>
+            <div>
+                Budget: <input type="integer" name="Nbudget" />
+            </div>
+            <input type="submit" class="submit" value="Submit Task"/>
+        </div>
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
     <script src="/js/create.js"></script>
+    <% include partials/template/taskfooter.ejs %>
+
 </body>
 </html>

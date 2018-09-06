@@ -67,7 +67,13 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
   
-
+.subBox{
+    display: flex;
+    justify-content: space-around;
+}
+a:hover{
+    text-shadow: 2px 2px black;
+}
 
 
 /* Footer */
@@ -147,6 +153,7 @@ section .section-title {
 .budgetPage {
     color: white;
     font-size: 4vw;
+    text-shadow: 2px 2px black;
 }
 
 .graphs {

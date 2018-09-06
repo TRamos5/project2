@@ -6,19 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel='stylesheet' href='/css/style.css' />
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-        <div class="container">
-        <div class ="headerBox">
-            <h1>Tasks</h1>
-        </div>
+        <% include partials/template/navBarC.ejs %>
+
+        <div class="containerT">
+            <h1 class='budgetPage'>Tasks</h1>
+      
     
         <div class ="navBox">
-            <div id='chat'>C</div>
+            <!-- <div id='chat'>C</div>
             <div id='budget'>B</div>
             <div id='tasks'>T</div>
-            <div id='log'>L</div>
+            <div id='log'>L</div> -->
         </div>
     
 
@@ -29,12 +31,12 @@
                 <div class= "addOn"> + Add Sub-Class</div>
             </ul>
         </div>
-    
-        <footer>
-            <button>To Profile</button>
-            <button>Log Out</button>
-        </footer>
+        <div class="containerT" style='height: 400px;'>
+
+        <% include partials/template/homefooter.ejs %>
+
         </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>

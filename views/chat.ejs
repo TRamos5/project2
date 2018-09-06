@@ -19,10 +19,14 @@
       #box{display: flex; justify-content: center; };
       ul{border-radius: 5%;}
       h1{text-align: center; font-size:6em;}
+      
     </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
-    <h1>Team-Chat</h1>
+    <% include partials/template/navBarC.ejs %>
+
     <div id="box">
     <ul id="messages"></ul>
     </div>

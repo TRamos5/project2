@@ -1,0 +1,50 @@
+body{
+    background-image: url('http://ayay.co.uk/backgrounds/digital_art/abstract/mercury-splash.jpg');
+    background-size: cover;
+    background-image: fixed;
+}
+.card-body{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+    background-color: white; 
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 3px black;
+    display: flex;
+    flex-direction: column;
+    padding:0px;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    justify-content: space-around;
+    padding-bottom: 3%;
+    margin-top: 3%;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    margin-top: 3%;
+    padding: 0px 3% 3% 3%;
+}
+.title{
+    font-size: 4vh;
+    background-color: lightgray; 
+    width: 100%;
+    padding:0px;
+    margin:0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+input{
+    border-radius: 5px;
+    border-style: solid;
+    border: 1px solid lightgray;
+}
