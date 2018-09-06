@@ -1,1 +1,0 @@
-Executing (default): SELECT "id", "name", "userName", "email", "password", "phoneNum", "project_id", "createdAt", "updatedAt", "user_id" FROM "users" AS "user" WHERE "user"."username" = 'motohunter';
