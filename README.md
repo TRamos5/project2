@@ -13,7 +13,7 @@ There are no reqiured installations to view this project. However if you wish to
 ## Built With The Following Codes
 - JavaScript
 - HTML & CSS
-- Bootstrap
+- Bootstrap 4.0
 - PostgreSQL
 - Sequelize
 - Node.js
