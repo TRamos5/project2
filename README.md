@@ -1,5 +1,5 @@
 # MERKURI
-www.merkuri.space
+www.merkuri.space/login
 
 ## Introduction
 This project is to help optimize project management on a small scale with a budget analaysis provided. MERKURI is a play on Mercury which is the Roman God of wealth and prosperity. An admin would be allowed to add members to his project with either a phone number or email, and assign tasks based on a schedule, description, and budget.
